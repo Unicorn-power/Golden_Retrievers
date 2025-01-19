@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Retrievers</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background: linear-gradient(to bottom right, #ffeb3b, #f9f9f9);
+            color: #333;
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        header {
+            background-color: #f1c40f;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-bottom: 5px solid #e67e22;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3.5em;
+            color: #fff;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+            animation: slideInFromTop 1s;
+        }
+
+        @keyframes slideInFromTop {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        h2 {
+            color: #e67e22; /* Dark Orange */
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            animation: bounceIn 1s;
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .image-gallery img {
+            width: 30%;
+            height: auto;
+            border-radius: 15px;
+            margin: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .info,
+        .care-tips,
+        .fun-facts {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+
+        .info:hover,
+        .care-tips:hover,
+        .fun-facts:hover {
+            background-color: #f0c674;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #f1c40f;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+        }
+
+        footer p {
+            margin: 0;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Golden Retrievers</h1>
+        <p>The Gentle Giants of the Dog World</p>
+    </header>
+
+    <div class="container">
+
+        <section class="info">
+            <h2>About Golden Retrievers</h2>
+            <p>Golden Retrievers are one of the most popular dog breeds in the world, renowned for their friendly, intelligent, and devoted nature. They were originally bred in Scotland for retrieving game from both water and land, and they have a wonderful golden coat that adds to their charm.</p>
+            <p>These dogs are known for their unwavering loyalty and make excellent family pets, therapy dogs, and assistance animals due to their gentle temperament.</p>
+        </section>
+
+        <section class="image-gallery">
+            <h2>Golden Retriever Gallery</h2>
+            <img src="images\Golden-retriever1.jpg"  alt="Golden Retriever 1">
+            <img src="images\Puppy.jpeg" alt="Golden Retriever 2">
+            <img src="images\Golden-retriever2.jpg" alt="Golden Retriever 3">
+            <img src="images\Golden-retriever-puppy.jpg" alt="Golden Retriever 4">
+            <img src="images\golden-retriever5.jpg" alt="Golden Retriever 5">
+        </section>
+
+        <section class="care-tips">
+            <h2>Care Tips</h2>
+            <ul>
+                <li><strong>Exercise:</strong> Golden Retrievers are active dogs that require regular exercise. Take them for walks, runs, or play fetch!</li>
+                <li><strong>Grooming:</strong> Regular brushing helps keep their coats healthy and reduces shedding.</li>
+                <li><strong>Training:</strong> Early socialization and obedience training are crucial for a well-behaved dog.</li>
+                <li><strong>Diet:</strong> Provide a balanced diet and consult your vet for proper nutrition specific to their age and activity level.</li>
+            </ul>
+        </section>
+
+        <section class="fun-facts">
+            <h2>Fun Facts</h2>
+            <ul>
+                <li>Golden Retrievers are often used as service dogs due to their intelligence and eager-to-please attitude.</li>
+                <li>They are known to have a life span of around 10 to 12 years.</li>
+                <li>Their love for water makes them excellent swimmers!</li>
+                <li>Golden Retrievers can learn over 200 commands, making them one of the most trainable breeds.</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Golden Retrievers Info. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
